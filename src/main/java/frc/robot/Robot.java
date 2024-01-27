@@ -16,6 +16,7 @@ import edu.wpi.first.hal.FRCNetComm.tInstances;
 import edu.wpi.first.hal.FRCNetComm.tResourceType;
 import edu.wpi.first.hal.HAL;
 import edu.wpi.first.wpilibj.TimedRobot;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
 
@@ -102,6 +103,10 @@ public class Robot extends TimedRobot {
         if (m_autonomousCommand != null) {
             m_autonomousCommand.cancel();
         }
+        SmartDashboard.putNumber("BL-Speed", 0.1);
+        SmartDashboard.putNumber("BR-Speed", 0.1);
+        SmartDashboard.putNumber("TL-Speed", 0.1);
+        SmartDashboard.putNumber("TR-Speed", 0.1);
     }
 
     /**
