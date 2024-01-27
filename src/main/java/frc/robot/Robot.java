@@ -103,10 +103,14 @@ public class Robot extends TimedRobot {
         if (m_autonomousCommand != null) {
             m_autonomousCommand.cancel();
         }
-        SmartDashboard.putNumber("BL-Speed", 0.1);
-        SmartDashboard.putNumber("BR-Speed", 0.1);
-        SmartDashboard.putNumber("TL-Speed", 0.1);
-        SmartDashboard.putNumber("TR-Speed", 0.1);
+        
+        SmartDashboard.putNumber("BL-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("BR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("TL-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("TR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Vortex Measured Speed", RobotContainer.getInstance().m_shamper.vortexMeasuredSpeed);
+        SmartDashboard.putNumber("Neo 550 Measured Speed", RobotContainer.getInstance().m_shamper.neo550MeasuredSpeed);
+
     }
 
     /**
