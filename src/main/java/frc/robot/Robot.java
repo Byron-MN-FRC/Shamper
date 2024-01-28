@@ -110,7 +110,7 @@ public class Robot extends TimedRobot {
         SmartDashboard.putNumber("TR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
         SmartDashboard.putNumber("Vortex Measured Speed", RobotContainer.getInstance().m_shamper.vortexMeasuredSpeed);
         SmartDashboard.putNumber("Neo 550 Measured Speed", RobotContainer.getInstance().m_shamper.neo550MeasuredSpeed);
-
+        SmartDashboard.putNumber("Single Neo 550 Measured Speed", RobotContainer.getInstance().m_shamper.singleNeo550MeasuredSpeed);
     }
 
     /**
