@@ -133,6 +133,16 @@ bottomLeft2.burnFlash();
         topRight.set((SmartDashboard.getNumber("TR-RPM", defaultRPM) / maxRPMVortex) * vortexCorrectionFactor);
     }
 
+    public void shoot() {
+        vortexTargetSpeed = SmartDashboard.getNumber("TL-RPM", defaultRPM);
+        vortexMeasuredSpeed = SmartDashboard.getNumber("Vortex Measured Speed", defaultRPM);
+        vortexCorrectionFactor = vortexTargetSpeed / vortexMeasuredSpeed;
+        bottomLeft.set(1);
+        bottomLeft2.set(1);
+        bottomRight.set(1);
+        topLeft.set((SmartDashboard.getNumber("TL-RPM", defaultRPM) / maxRPMVortex) * vortexCorrectionFactor);
+        topRight.set((SmartDashboard.getNumber("TR-RPM", defaultRPM) / maxRPMVortex) * vortexCorrectionFactor);
+    }
     public void stopall() {
         bottomLeft.set(0);
         bottomLeft2.set(0);
