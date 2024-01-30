@@ -104,13 +104,14 @@ public class Robot extends TimedRobot {
             m_autonomousCommand.cancel();
         }
         
-        SmartDashboard.putNumber("BL-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("BR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("TL-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("TR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("Vortex Measured Speed", RobotContainer.getInstance().m_shamper.vortexMeasuredSpeed);
-        SmartDashboard.putNumber("Neo 550 Measured Speed", RobotContainer.getInstance().m_shamper.neo550MeasuredSpeed);
-        SmartDashboard.putNumber("Single Neo 550 Measured Speed", RobotContainer.getInstance().m_shamper.singleNeo550MeasuredSpeed);
+        SmartDashboard.putNumber("Bottom Left RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Bottom Left Measured Speed", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Bottom Right RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Bottom Right Measured Speed", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Top Left RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Top Left Measured Speed", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Top Right RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("Top Right Measured Speed", RobotContainer.getInstance().m_shamper.defaultRPM);
     }
 
     /**
