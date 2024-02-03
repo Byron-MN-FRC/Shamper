@@ -44,10 +44,10 @@ public class Robot extends TimedRobot {
         m_robotContainer = RobotContainer.getInstance();
         HAL.report(tResourceType.kResourceType_Framework, tInstances.kFramework_RobotBuilder);
         enableLiveWindowInTest(true);
-        SmartDashboard.putNumber("BL-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("BR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("TL-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
-        SmartDashboard.putNumber("TR-RPM", RobotContainer.getInstance().m_shamper.defaultRPM);
+        SmartDashboard.putNumber("BL-RPM", RobotContainer.getInstance().m_spamp.defaultRPM);
+        SmartDashboard.putNumber("BR-RPM", RobotContainer.getInstance().m_spamp.defaultRPM);
+        SmartDashboard.putNumber("TL-RPM", RobotContainer.getInstance().m_spamp.defaultRPM);
+        SmartDashboard.putNumber("TR-RPM", RobotContainer.getInstance().m_spamp.defaultRPM);
     }
 
     /**

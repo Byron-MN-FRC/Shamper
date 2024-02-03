@@ -85,8 +85,8 @@
             ],
             "content": {
               "_type": "Basic Subsystem",
-              "_source0": "network_table:///SmartDashboard/Shamper",
-              "_title": "Shamper",
+              "_source0": "network_table:///SmartDashboard/Spamp",
+              "_title": "Spamp",
               "_glyph": 148,
               "_showGlyph": false
             }

@@ -128,7 +128,7 @@ Children:
         validators: null
         value: []
     Base: Subsystem
-    Name: Shamper
+    Name: Spamp
   Properties: {}
   Base: Subsystems
   Name: Subsystems
@@ -224,7 +224,7 @@ Children:
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Requires, type: Subsystem, validators: null, value: Shamper}
+        name: Requires, type: Subsystem, validators: null, value: Spamp}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
         default: &id010 []
         name: Parameter presets
@@ -262,4 +262,4 @@ Properties:
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
 Base: Robot
-Name: Shamper
+Name: Spamp
